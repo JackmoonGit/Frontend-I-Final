@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-1: #8B48BF;
+    --primary-color-2: #3CDDF3;
+    --neutral-color-blueblack: #1E1E26;
+    --neutral-color-bluebold: #232851;
+    --neutral-color-graylight: rgb(249, 249, 249);
+
+}
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    background-color: #F5F5F5;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Desktop */
+
+header {
+    display: flex;
+    width: calc(auto + 1440px);
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Menu Header */
+
+.flex-menu {
+    display: flex;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style-type: none;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--neutral-color-bluebold);
+    font-weight: 500;
+    font-size: 16px;
+}
+.menu a:hover {
+    color: #242E5299;
+}
+.flex-btn {
+    display: flex;
+}
+
+/* Botón Contacto */
+
+.btn-contact a {
+    background-color: var(--primary-color-1);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 25px;
+    margin: fit-content;
+}
+.btn-contact a:hover {
+    background-color: var(--neutral-color-bluebold);
+}
+
+/* Banner 1 */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.banner-txt {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 25px;
+}
+.banner-txt h1 {
+    color: var(--neutral-color-bluebold);
+    text-align: left;
+    font-size: 45px;
+    font-weight: 700;
+}
+.banner-txt span {
+    text-align: left;
+    color: black;
+    font-weight: 500;
+}
+.banner-img img {
+    width: 500px;
+}
+
+/* Banner 2 */
+
+.banner-2 {
+    display: flex;
+    background-color: #8B48BF;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+}
+.banner-2 h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+}
+.banner-2 span {
+    color: white;
+    width: 450px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Banner Differences Pro */
+.banner-3-pro {
+    display: flex;
+    background-color: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.banner-3-pro .title {
+    color: #323851;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+}
+.banner-3-pro .description {
+    color: #B3B2B7;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    width: 20em;
+}
+.banner-3-pro ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    text-align: left;
+    list-style-type: none;
+}
+/* Contador LI - Banner 3 */
+.banner-3-pro li {
+    display: flex;
+    counter-increment: step-counter;
+}
+.banner-3-pro li::before {
+    content: "0" counter(step-counter);
+    background-color: var(--primary-color-1);
+    color: white;
+    height: fit-content;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+
+    /* Elementos Ocultos en Mobile */
+    .menu-burger {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+}
+
+
+
+
